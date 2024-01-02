@@ -27,8 +27,107 @@
           </div>
 
           <!-- White Container -->
-          <div class="white-div"></div>
+          <div class="white-div">
+            <div class="white-semi-div">
+              <div>
+                <p>
+                  Access these features when you get this pricing package for<br />
+                  your business.
+                </p>
+              </div>
+
+              <div class="p-icon">
+                <p class="pTickIcon">
+                  <span
+                    ><img
+                      src="../assets/Group 172.png"
+                      alt="Tick-Icon"
+                      class="tickIcon"
+                    />
+                  </span>
+                  <span>International calling and messaging API</span>
+                </p>
+
+                <p class="pTickIcon">
+                  <span
+                    ><img
+                      src="../assets/Group 172.png"
+                      alt="Tick-Icon"
+                      class="tickIcon"
+                    />
+                  </span>
+                  <span>Additional phone numbers</span>
+                </p>
+
+                <p class="pTickIcon">
+                  <span
+                    ><img
+                      src="../assets/Group 172.png"
+                      alt="Tick-Icon"
+                      class="tickIcon"
+                    />
+                  </span>
+                  <span>Automated messages via Zapier</span>
+                </p>
+
+                <p class="pTickIcon">
+                  <span
+                    ><img
+                      src="../assets/Group 172.png"
+                      alt="Tick-Icon"
+                      class="tickIcon"
+                    />
+                  </span>
+                  <span>24/7 support and consulting</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Third Half -->
+
+    <div class="thirdHalf">
+      <div class="semi-third-half">
+        <p class="semi-p">
+          <span>
+            <img
+              src="../assets/Group (2).png"
+              alt="Shield Icon"
+              class="sh-Icon"
+            />
+          </span>
+          <span
+            >30 days money back <br />
+            Guarantee</span
+          >
+        </p>
+
+        <p class="semi-p">
+          <span>
+            <img
+              src="../assets/Group (1).png"
+              alt="Shield Icon"
+              class="sh-Icon"
+            />
+          </span>
+          <span
+            >No setup fees<br />
+            100% hassle-free</span
+          >
+        </p>
+
+        <p class="semi-p">
+          <span>
+            <img src="../assets/Group.png" alt="Shield Icon" class="sh-Icon" />
+          </span>
+          <span
+            >No monthly subscription<br />
+            Pay once and for all</span
+          >
+        </p>
       </div>
     </div>
   </div>
@@ -72,7 +171,7 @@
 
 .first-half {
   background-color: var(--bg-color-primary);
-  padding: 2em;
+  padding-top: 2em;
   color: var(--text-color-1);
   height: 45vh;
   text-align: center;
@@ -116,21 +215,38 @@
     0px 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
+.flex-semi-div {
+  display: flex;
+}
+
 .grey-div {
   background-color: var(--bg-color-2);
   color: var(--text-color-tertiary);
   text-align: center;
-  padding: 2.5em 0em;
-  border-radius: 12px;
+  padding: 2.3em 0em;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
   width: 18em;
+}
+
+.white-div {
+  padding: 2.3em 0em;
+  color: var(--text-color-tertiary);
+  font-weight: 400;
 }
 
 .grey-semi-div {
   padding: 0 2em;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.7em;
   width: 100%;
+}
+.white-semi-div {
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
 }
 
 .pro-p {
@@ -156,5 +272,62 @@
   padding: 0.8em 3em;
   font-weight: 700;
   width: 100%;
+  transition: all linear 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--bg-color-1);
+}
+
+.p-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.pTickIcon {
+  display: flex;
+  gap: 0.9em;
+}
+
+.tickIcon {
+  width: 21px;
+  height: 21px;
+}
+
+/* Third Half */
+
+.thirdHalf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+}
+
+.semi-third-half {
+  display: flex;
+  gap: 2.4em;
+}
+
+.semi-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-weight: 700;
+}
+
+.sh-Icon {
+  width: 36px;
+  height: 36px;
+}
+
+/* Media queries */
+
+@media screen and (min-height: 996px) {
+  .first-half {
+    height: 30vh;
+  }
 }
 </style>
